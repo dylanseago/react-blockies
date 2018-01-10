@@ -152,6 +152,8 @@ export default class Identicon extends Component {
       <canvas
         ref={(identicon) => { this.identicon = identicon; }}
         className="identicon"
+        aria-label="Identicon"
+        role="img"
       />
     );
   }
