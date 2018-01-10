@@ -148,12 +148,14 @@ export default class Identicon extends Component {
   }
 
   render() {
+    const { seed, size, scale, color, bgColor, spotColor, ...extraProps } = this.props
     return (
       <canvas
         ref={(identicon) => { this.identicon = identicon; }}
         className="identicon"
         aria-label="Identicon"
         role="img"
+        {...extraProps}
       />
     );
   }
